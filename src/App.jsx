@@ -12,8 +12,7 @@ import Messages from './pages/Messages'
 import Dashboard from './pages/Dashboard'
 
 /**
- * Layout principal de l'application
- * Contient Sidebar + Navbar + contenu des pages
+ * Layout principal (Sidebar + Navbar + contenu)
  */
 function Layout({ children }) {
   return (
@@ -32,7 +31,7 @@ function Layout({ children }) {
 }
 
 /**
- * App principale avec routing
+ * Application principale
  */
 export default function App() {
   return (
@@ -43,14 +42,14 @@ export default function App() {
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Pages avec layout (sidebar + navbar) */}
+        {/* Pages avec layout */}
         <Route path="/" element={<Layout><Accueil /></Layout>} />
         <Route path="/demandes" element={<Layout><Demandes /></Layout>} />
         <Route path="/messages" element={<Layout><Messages /></Layout>} />
         <Route path="/profil" element={<Layout><Profil /></Layout>} />
         <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
 
-        {/* Redirection fallback */}
+        {/* Route fallback */}
         <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
