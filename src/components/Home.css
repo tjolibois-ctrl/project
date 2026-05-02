@@ -1,0 +1,96 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 800px;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1c233d;
+}
+
+.home-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(31, 47, 84, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 16px 40px rgba(31, 47, 84, 0.1);
+}
+
+.feature-card-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.feature-card h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #1c233d;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.home-cta {
+  display: flex;
+  gap: 12px;
+}
+
+.home-cta a,
+.home-cta button {
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.home-cta .primary {
+  background: #3f63ff;
+  color: white;
+}
+
+.home-cta .primary:hover {
+  background: #3254d8;
+}
+
+.home-cta .secondary {
+  background: white;
+  color: #1c233d;
+  box-shadow: 0 10px 20px rgba(10, 31, 84, 0.08);
+}
+
+.home-cta .secondary:hover {
+  background: #f3f4f6;
+}
